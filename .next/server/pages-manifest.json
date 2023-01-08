@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/components/CardListProduct": "pages/components/CardListProduct.html",
+  "/components/CardProduct": "pages/components/CardProduct.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.html",
+  "/api/hello": "pages/api/hello.js",
+  "/components/Footer": "pages/components/Footer.html",
+  "/components/Header": "pages/components/Header.html",
+  "/404": "pages/404.html"
+}
