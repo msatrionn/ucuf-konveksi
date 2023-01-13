@@ -1,7 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../../public/image/logo_text.png";
+import Banner from "../../public/image/image.png";
+import Rectangle from "../../public/image/rect.png";
 
+const styles = {
+  bannerContainer: {
+    backgroundImage: `url(${Banner.src})`,
+    height: "32rem",
+  },
+  buttonImg: {
+    backgroundImage: `url(${Rectangle.src})`,
+  },
+};
 const Header = () => {
   return (
     <div>
@@ -67,31 +78,31 @@ const Header = () => {
             </div>
           </div>
         </nav>
-
         <div
           className="w-full bg-cover bg-center"
-          style={{
-            height: "32rem",
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1672359171910-4f06e805396a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80)",
-          }}
+          style={styles.bannerContainer}
         >
           <div className="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
             <div className="text-center">
               <h1 className="text-white text-2xl font-semibold uppercase md:text-3xl">
-                Choose your favorite color
+                Pilih warna favoritmu !
                 <br />
                 <span className="text-custom-blue-100 text-[20px]">
-                  for the best appearance
+                  untuk penampilan terbaik
                 </span>
               </h1>
-              <input
-                className="shadow appearance-none border border-gray-500 rounded w-full mt-5 py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                placeholder="Search"
-              ></input>
-              <button className="mt-4 px-4 py-2 bg-java-blue text-white text-sm uppercase font-medium rounded hover:java-blue-500 focus:outline-none focus:bg-java-blue-500">
-                Search Color
-              </button>
+              <div className="flex items-center mt-3">
+                <input
+                  className="h-10 w-full pl-4"
+                  placeholder="Search"
+                ></input>
+                <button
+                  className="h-10 w-[200px] text-white"
+                  style={styles.buttonImg}
+                >
+                  Cari Warna
+                </button>
+              </div>
             </div>
           </div>
         </div>

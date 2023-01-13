@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         "java-blue": "#030164",
         "java-blue-200": "#595873",
+        "blue-light": "#EEEEFF",
         "custom-blue-100": "#8ddae3",
       },
     },

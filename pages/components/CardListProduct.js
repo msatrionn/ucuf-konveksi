@@ -13,10 +13,10 @@ const CardListProduct = () => {
       id: 1,
       title: "Blue Tshirt",
       colorName: "blue",
+      type: "Lengan Pendek",
       color: Blue,
-      price: "28",
-      promoprice: "28",
-      promoPrice: "24",
+      price: "40000",
+      promoPrice: "35000",
       details: [
         {
           age: "adult",
@@ -52,10 +52,10 @@ const CardListProduct = () => {
       id: 2,
       title: "Maroon Tshirt",
       colorName: "maroon",
+      type: "Lengan panjang Tanpa RIB",
       color: Maroon,
-      price: "28",
-      promoprice: "28",
-      promoPrice: "24",
+      price: "40000",
+      promoPrice: "35000",
       details: [
         {
           age: "adult",
@@ -91,9 +91,10 @@ const CardListProduct = () => {
       id: 3,
       title: "Black Tshirt",
       colorName: "black",
+      type: "Lengan panjang Tanpa RIB",
       color: Black,
-      price: "28",
-      promoPrice: "24",
+      price: "40000",
+      promoPrice: "35000",
       details: [
         {
           age: "adult",
@@ -130,8 +131,9 @@ const CardListProduct = () => {
       title: "White Tshirt",
       colorName: "white",
       color: White,
-      price: "28",
-      promoPrice: "24",
+      type: "Lengan panjang Tanpa RIB",
+      price: "40000",
+      promoPrice: "35000",
       details: [
         {
           age: "adult",
@@ -167,9 +169,10 @@ const CardListProduct = () => {
       id: 5,
       title: "Brown Tshirt",
       colorName: "brown",
+      type: "Lengan Pendek",
       color: Brown,
-      price: "28",
-      promoPrice: "24",
+      price: "40000",
+      promoPrice: "35000",
       details: [
         {
           age: "adult",
@@ -221,6 +224,7 @@ const CardListProduct = () => {
                   item={item}
                   details={item.details}
                   promoPrice={item.promoPrice}
+                  type={item.type}
                 />
                 {/* <ModalDetailProduct item={item} details={item.details} /> */}
               </div>

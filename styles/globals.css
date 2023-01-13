@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background: #f0f0f0;
+}
+@media (max-width: 1354px) {
+  .container-product {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .container-product-button {
+    margin: 0 auto;
+  }
+  .table-class {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 873px) {
+  .wrapper-footers {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
