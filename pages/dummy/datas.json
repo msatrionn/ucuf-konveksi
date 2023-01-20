@@ -1,0 +1,3287 @@
+[
+    {
+      "id": 1,
+      "title": "Blue Tshirt",
+      "colorName": "blue",
+      "type": "Lengan Pendek",
+      "color": Blue,
+      "details": [
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+      ],
+    },
+    {
+      "id": 2,
+      "title": "Maroon Tshirt",
+      "colorName": "maroon",
+      "type": "Lengan panjang Tanpa RIB",
+      "color": Maroon,
+      "details": [
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+      ],
+    },
+    {
+      "id": 3,
+      "title": "Black Tshirt",
+      "colorName": "black",
+      "type": "Lengan panjang Tanpa RIB",
+      "color": Black,
+      "details": [
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+      ],
+    },
+    {
+      "id": 4,
+      "title": "White Tshirt",
+      "colorName": "white",
+      "color": White,
+      "type": "Lengan panjang Tanpa RIB",
+      "details": [
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+      ],
+    },
+    {
+      "id": 5,
+      "title": "Brown Tshirt",
+      "colorName": "brown",
+      "type": "Lengan Pendek",
+      "color": Brown,
+      "details": [
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "40000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "adult",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "24s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_pendek"
+        },
+        {
+          "size": "xs",
+          "qty": 4,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "s",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "m",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "l",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xl",
+          "qty": 2,
+          "price": "30000",
+          "promoPrice": "31000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxl",
+          "qty": 5,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxl",
+          "qty": 0,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+        {
+          "size": "xxxxxl",
+          "qty": 2,
+          "price": "45000",
+          "promoPrice": "35000",
+          "age": "child",
+          "material": "30s",
+          "jenis": "lengan_panjang"
+        },
+      ],
+    },
+  ];

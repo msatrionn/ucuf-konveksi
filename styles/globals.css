@@ -19,9 +19,22 @@ body {
     margin: 0 auto;
   }
 }
-@media (max-width: 873px) {
+@media (max-width: 1250px) {
   .wrapper-footers {
     display: flex !important;
     justify-content: center !important;
+  }
+}
+@media (max-width: 650px) {
+  .container-button {
+    display: block !important;
+  }
+  .innerbutton {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .container-product-button {
+    max-width: 70%;
   }
 }

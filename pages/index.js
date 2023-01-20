@@ -13,7 +13,7 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" />
       <Header />
       <div className="text-center m-10">
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <div className="flex justify-center p-5 rounded-md bg-white max-w-[800px] shadow-md">
             <div className="flex">
               <label className="flex items-center ml-10">
@@ -34,7 +34,7 @@ export default function Home() {
               </label>
             </div>
           </div>
-        </div>
+        </div> */}
         <div>
           <CardListProduct />
         </div>

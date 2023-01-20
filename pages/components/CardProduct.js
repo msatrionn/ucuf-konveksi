@@ -17,27 +17,50 @@ const CardProduct = ({
   const [age, setAge] = useState("adult");
   const [size, setSize] = useState("L");
   const [qty, setQty] = useState(0);
-  details?.map((data) =>
-    data.size?.map((item) => (item.name = item.name.toLocaleUpperCase()))
-  );
-  const filteredData = details?.filter((data) =>
-    data.age.toLocaleLowerCase().includes(age.toLocaleLowerCase())
-  );
-  details = filteredData;
-  const handleAdult = () => {
+  const [Check, setCheck] = useState([]);
+  const [Data, setData] = useState([]);
+  const [Ages, setAges] = useState("adult");
+  const [Material, setMaterial] = useState("30s");
+  const [Type, setType] = useState("pendek");
+  // details?.map((data) =>
+  //   data.size?.map((item) => (item.name = item.name.toLocaleUpperCase()))
+  // );
+  // const filteredData = details?.filter((data) =>
+  //   data.age.toLocaleLowerCase().includes(age.toLocaleLowerCase())
+  // );
+  // details = filteredData;
+  const handleAdult = (item, e) => {
+    const datas = [];
+    if (e.target.checked) {
+      datas.push(item);
+      setCheck(item);
+    }
+    // console.log(Check);
     setAge("adult");
     setQty("");
     setSize("");
   };
-  const handleChild = () => {
-    setSize("");
-    setQty("");
-    setAge("child");
-  };
-  const handleSetData = (size, qty) => {
-    setQty(qty);
-    setSize(size);
-  };
+  const DataDetail = details.filter(
+    (item) =>
+      item.age.toLowerCase().includes(Ages) &&
+      item.material.toLowerCase().includes(Material) &&
+      item.jenis.toLowerCase().includes(Type)
+  );
+
+  useEffect(() => {
+    setData(DataDetail);
+  }, [Ages, Material, Type]);
+
+  // console.log(details);
+  // const handleChild = () => {
+  //   setSize("");
+  //   setQty("");
+  //   setAge("child");
+  // };
+  // const handleSetData = (size, qty) => {
+  //   setQty(qty);
+  //   setSize(size);
+  // };
   const redirectWhatsApp = () => {
     if (qty < 1) {
       alert("Silahkan pilih ukuran terlebih dahulu");
@@ -101,7 +124,7 @@ const CardProduct = ({
                 <div className="md:flex container-product">
                   <div className="md:shrink-0">
                     <Image
-                      className="h-[355px] w-[full] object-cover md:w-[355px] p-7"
+                      className="h-[355px] w-[full] object-contain md:w-[355px] p-7"
                       src={color}
                       alt="Modern building architecture"
                     />
@@ -115,7 +138,7 @@ const CardProduct = ({
                         Hijau Pucuk - Lengan Panjang Tanpa RIB
                       </span>
                     </div>
-                    <div className="bg-blue-light max-w-[350px] container-product-button">
+                    <div className="bg-blue-light max-w-[350px] container-product-button text-sm">
                       <div className="text-left text-3xl text-java-blue pl-4 pt-4 pb-2">
                         Rp30.000
                       </div>
@@ -124,34 +147,129 @@ const CardProduct = ({
                       </div>
                     </div>
                     <div className="flex flex-col">
-                      <div className="container-product-button">
+                      <div className="container max-w-[350px] container-product-button text-sm">
                         <div className="flex justify-start text-gray-400 mt-2 mb-2">
-                          Jenis Kaos
+                          Jenis Usia
                         </div>
-                        <div className="flex">
-                          <div className="flex items-center bg-blue-light border rounded-md border-java-blue pt-1 pb-1  pr-4 pl-4 mr-4 w-[150px] text-left text-java-blue">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
+                          <div
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                              Ages == "adult"
+                                ? "bg-blue-light border-java-blue innerbutton"
+                                : "border-gray-200"
+                            }`}
+                            onClick={() => setAges("adult")}
+                          >
                             <span>Dewasa</span>
-                            <Image src={CheckImg} className="ml-4" alt="" />
+                            {Ages == "adult" ? (
+                              <Image src={CheckImg} className="ml-2" alt="" />
+                            ) : (
+                              ""
+                            )}
                           </div>
-                          <div className="flex items-center border rounded-md border-gray-200 pt-1 pb-1 pr-4 pl-4 w-[150px] text-left text-java-blue">
+                          <div
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                              Ages == "child"
+                                ? "bg-blue-light border-java-blue innerbutton"
+                                : "border-gray-200"
+                            }`}
+                            onClick={() => setAges("child")}
+                          >
                             <span>Anak</span>
-                            {/* <Image src={CheckImg} className="ml-4" alt="" /> */}
+                            {Ages == "child" ? (
+                              <Image src={CheckImg} className="ml-2" alt="" />
+                            ) : (
+                              ""
+                            )}
                           </div>
                         </div>
                       </div>
-
-                      <div className="container-product-button">
+                      <div className="container max-w-[350px] container-product-button text-sm">
                         <div className="flex justify-start text-gray-400 mt-2 mb-2">
                           Bahan
                         </div>
-                        <div className="flex">
-                          <div className="flex items-center bg-blue-light border rounded-md border-java-blue pt-1 pb-1  pr-4 pl-4 mr-4 w-[150px] text-left text-java-blue">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                          <div
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                              Material == "24s"
+                                ? "bg-blue-light border-java-blue innerbutton"
+                                : "border-gray-200"
+                            }`}
+                            onClick={() => setMaterial("24s")}
+                          >
                             <span>24S</span>
-                            <Image src={CheckImg} className="ml-4" alt="" />
+                            {Material == "24s" ? (
+                              <Image src={CheckImg} className="ml-2" alt="" />
+                            ) : (
+                              ""
+                            )}
                           </div>
-                          <div className="flex items-center border rounded-md border-gray-200 pt-1 pb-1 pr-4 pl-4 w-[150px] text-left text-java-blue">
+                          <div
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                              Material == "30s"
+                                ? "bg-blue-light border-java-blue innerbutton"
+                                : "border-gray-200"
+                            }`}
+                            onClick={() => setMaterial("30s")}
+                          >
                             <span>30S</span>
-                            {/* <Image src={CheckImg} className="ml-4" alt="" /> */}
+                            {Material == "30s" ? (
+                              <Image src={CheckImg} className="ml-2" alt="" />
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="container max-w-[350px] container-product-button text-sm">
+                        <div className="flex justify-start text-gray-400 mt-2 mb-2">
+                          Jenis
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                          <div
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                              Type == "pendek"
+                                ? "bg-blue-light border-java-blue innerbutton"
+                                : "border-gray-200"
+                            }`}
+                            onClick={() => setType("pendek")}
+                          >
+                            <span>Pendek</span>
+                            {Type == "pendek" ? (
+                              <Image src={CheckImg} className="ml-2" alt="" />
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                          <div
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                              Type == "panjang"
+                                ? "bg-blue-light border-java-blue innerbutton"
+                                : "border-gray-200"
+                            }`}
+                            onClick={() => setType("panjang")}
+                          >
+                            <span>Panjang + RIB</span>
+                            {Type == "panjang" ? (
+                              <Image src={CheckImg} className="ml-2" alt="" />
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                          <div
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                              Type == "panjang_no_rib"
+                                ? "bg-blue-light border-java-blue innerbutton"
+                                : "border-gray-200"
+                            }`}
+                            onClick={() => setType("panjang_no_rib")}
+                          >
+                            <span>Panjang no RIB</span>
+                            {Type == "panjang_no_rib" ? (
+                              <Image src={CheckImg} className="ml-2" alt="" />
+                            ) : (
+                              ""
+                            )}
                           </div>
                         </div>
                       </div>
@@ -159,159 +277,66 @@ const CardProduct = ({
                   </div>
                 </div>
               </div>
-              <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-full">
+              <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-[680px]">
                 <div className="md:flex">
-                  <div className="table-class mx-auto">
-                    <div className="relative overflow-x-auto  sm:-mx-6 lg:-mx-8 shadow-md sm:rounded-lg">
+                  <div className="table-class mx-auto w-full pl-10 pr-10">
+                    <div className="relative overflow-x-auto  sm:-mx-6 lg:-mx-8  sm:rounded-lg">
                       <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <thead className="text-xs text-gray-700 border-b border-black dark:bg-gray-700 dark:text-gray-400">
                           <tr>
-                            <th scope="col" className="px-8 py-1 text-xs">
-                              Color
-                            </th>
-                            <th scope="col" className="px-8 py-1 text-xs">
-                              Category
-                            </th>
-                            <th scope="col" className="px-8 py-1 text-xs">
-                              Price
-                            </th>
-                            <th scope="col" className="px-8 py-1 text-xs">
-                              Action
-                            </th>
+                            <td
+                              scope="col"
+                              className="px-8 py-1 text-xs text-gray-400"
+                            >
+                              Ukuran
+                            </td>
+                            <td
+                              scope="col"
+                              className="px-8 py-1 text-xs text-gray-400"
+                            >
+                              Harga
+                            </td>
+                            <td scope="col" className="text-xs text-gray-400">
+                              Stok
+                            </td>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                            <td className="px-8 py-1 text-xs">Sliver</td>
-                            <td className="px-8 py-1 text-xs">Laptop</td>
-                            <td className="px-8 py-1 text-xs">$2999</td>
-                            <td className="px-8 py-1 text-xs"></td>
-                          </tr>
-                          <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                            <td className="px-8 py-1 text-xs">White</td>
-                            <td className="px-8 py-1 text-xs">Laptop PC</td>
-                            <td className="px-8 py-1 text-xs">$1999</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
-                            <td className="px-8 py-1 text-xs">Black</td>
-                            <td className="px-8 py-1 text-xs">Accessories</td>
-                            <td className="px-8 py-1 text-xs">$99</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                            <td className="px-8 py-1 text-xs">Gray</td>
-                            <td className="px-8 py-1 text-xs">Phone</td>
-                            <td className="px-8 py-1 text-xs">$799</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-8 py-1 text-xs">Red</td>
-                            <td className="px-8 py-1 text-xs">Wearables</td>
-                            <td className="px-8 py-1 text-xs">$999</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-8 py-1 text-xs">Red</td>
-                            <td className="px-8 py-1 text-xs">Wearables</td>
-                            <td className="px-8 py-1 text-xs">$999</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-8 py-1 text-xs">Red</td>
-                            <td className="px-8 py-1 text-xs">Wearables</td>
-                            <td className="px-8 py-1 text-xs">$999</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-8 py-1 text-xs">Red</td>
-                            <td className="px-8 py-1 text-xs">Wearables</td>
-                            <td className="px-8 py-1 text-xs">$999</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-8 py-1 text-xs">Red</td>
-                            <td className="px-8 py-1 text-xs">Wearables</td>
-                            <td className="px-8 py-1 text-xs">$999</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-8 py-1 text-xs">Red</td>
-                            <td className="px-8 py-1 text-xs">Wearables</td>
-                            <td className="px-8 py-1 text-xs">$999</td>
-                            <td className="px-8 py-1 text-xs">
-                              <a
-                                href="#"
-                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                              >
-                                Edit
-                              </a>
-                            </td>
-                          </tr>
+                          {Data.map((item, key) => (
+                            <tr
+                              className="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                              key={key}
+                            >
+                              <td className="px-8 py-1 text-xs" key={key}>
+                                {item.size}
+                              </td>
+                              <td className="px-8 py-2 text-xs">
+                                {item.price}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue">
+                                    {item.qty}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    disabled={item.qty == 0 ?? "true"}
+                                    onChange={(e) => handleAdult(item.size, e)}
+                                    checked={item.size == Check ? true : false}
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                          ))}
                         </tbody>
                       </table>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="flex justify-between bg-gray-200 mt-[38px] flex-wrap wrapper-footers">
-                <div className="flex items-center justify-center mb-5 mt-5 break-words">
+              <div className="flex justify-between bg-gray-100 mt-[24px] flex-wrap wrapper-footers">
+                <div className="flex items-center justify-center mb-5 mt-5 break-words ml-10 text-gray-500">
                   Perubahan data stok terakhir: 09 Januari 2023
                 </div>
                 <div className="mr-7 flex justify-center items-center  mb-5 mt-5">
@@ -322,7 +347,7 @@ const CardProduct = ({
                     Kembali
                   </button>
                   <button
-                    onClick={() => setShowModal(false)}
+                    onClick={() => redirectWhatsApp()}
                     className="bg-java-blue text-white p-2 pl-3 pr-3 rounded-md ml-4"
                   >
                     Beli Sekarang

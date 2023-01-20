@@ -60,19 +60,19 @@ const Header = () => {
                   href="#"
                   className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-blue-600"
                 >
-                  About
+                  Tentang
                 </a>
                 <a
                   href="#"
                   className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-blue-600"
                 >
-                  Size Chart
+                  Panduan Ukuran
                 </a>
                 <a
                   href="#"
                   className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-blue-600"
                 >
-                  Contact
+                  Kontak
                 </a>
               </div>
             </div>
