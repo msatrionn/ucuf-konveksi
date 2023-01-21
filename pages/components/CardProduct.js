@@ -22,20 +22,12 @@ const CardProduct = ({
   const [Ages, setAges] = useState("adult");
   const [Material, setMaterial] = useState("30s");
   const [Type, setType] = useState("pendek");
-  // details?.map((data) =>
-  //   data.size?.map((item) => (item.name = item.name.toLocaleUpperCase()))
-  // );
-  // const filteredData = details?.filter((data) =>
-  //   data.age.toLocaleLowerCase().includes(age.toLocaleLowerCase())
-  // );
-  // details = filteredData;
   const handleAdult = (item, e) => {
     const datas = [];
     if (e.target.checked) {
       datas.push(item);
       setCheck(item);
     }
-    // console.log(Check);
     setAge("adult");
     setQty("");
     setSize("");
@@ -51,16 +43,6 @@ const CardProduct = ({
     setData(DataDetail);
   }, [Ages, Material, Type]);
 
-  // console.log(details);
-  // const handleChild = () => {
-  //   setSize("");
-  //   setQty("");
-  //   setAge("child");
-  // };
-  // const handleSetData = (size, qty) => {
-  //   setQty(qty);
-  //   setSize(size);
-  // };
   const redirectWhatsApp = () => {
     if (qty < 1) {
       alert("Silahkan pilih ukuran terlebih dahulu");
@@ -73,8 +55,8 @@ const CardProduct = ({
   };
   return (
     <div>
-      <section className="mx-auto w-fit p-12 drop-shadow-lg">
-        <div className="w-72 h-fit group">
+      <section className="mx-auto w-fit p-2 drop-shadow-lg">
+        <div className="w-52 h-fit group">
           <Fragment key={keys}>
             <div className="relative overflow-hidden bg-white ">
               <Image

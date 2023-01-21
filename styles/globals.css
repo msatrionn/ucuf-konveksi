@@ -38,3 +38,13 @@ body {
     max-width: 70%;
   }
 }
+@media (max-width: 1040px) {
+  .wrap-chart {
+    max-width: 90% !important;
+    margin: 0 auto;
+  }
+  .wrap-chart-img {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+}
