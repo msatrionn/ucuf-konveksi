@@ -66,7 +66,7 @@ const CardProduct = ({
   return (
     <div>
       <section className="mx-auto w-fit p-2 drop-shadow-lg">
-        <div className="w-52 h-fit group">
+        <div className="w-64 h-fit group">
           <Fragment key={keys}>
             <div className="relative overflow-hidden bg-white ">
               <Image
@@ -90,17 +90,18 @@ const CardProduct = ({
                   {colorName}
                 </h2>
                 <span className="bg-blue-light text-java-blue p-1 text-xs">
-                  {type}
+                  <span className="text-xs">RP</span>
+                  {price}
                 </span>
                 <div className="pb-2">
                   {/* <del className="text-red-700 text-md">
                     <span className="text-xs">RP</span>
                     <span className="mt-2"> {price}</span>
                   </del> */}
-                  <p className="text-md mt-2 ml-1 inline-block  text-java-blue">
+                  {/* <p className="text-md mt-2 inline-block  text-java-blue">
                     <span className="text-xs">RP</span>
                     {price}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

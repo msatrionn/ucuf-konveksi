@@ -14,6 +14,7 @@ const CardListProduct = () => {
       title: "Blue Tshirt",
       colorName: "blue",
       color: Blue,
+      price: "25000-35000",
       details: [
         {
           size: "xs",
@@ -994,6 +995,7 @@ const CardListProduct = () => {
       title: "Maroon Tshirt",
       colorName: "maroon",
       color: Maroon,
+      price: "25000-35000",
       details: [
         {
           size: "xs",
@@ -1974,6 +1976,7 @@ const CardListProduct = () => {
       title: "Black Tshirt",
       colorName: "black",
       color: Black,
+      price: "25000-35000",
       details: [
         {
           size: "xs",
@@ -2954,6 +2957,7 @@ const CardListProduct = () => {
       title: "White Tshirt",
       colorName: "white",
       color: White,
+      price: "25000-35000",
       details: [
         {
           size: "xs",
@@ -3934,6 +3938,7 @@ const CardListProduct = () => {
       title: "Brown Tshirt",
       colorName: "brown",
       color: Brown,
+      price: "25000-35000",
       details: [
         {
           size: "xs",
