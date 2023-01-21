@@ -125,17 +125,17 @@ const CardProduct = ({
                   <div className="">
                     <div className="w-full mt-8 text-left flex justify-center">
                       <div className="w-[50px] h-[60px]">
-                        <span className="text-xl bg-blue-light p-2">#129</span>
+                        <span className="text-md bg-blue-light p-2">#129</span>
                       </div>
-                      <span className="text-xl ml-6">
+                      <span className="text-md ml-6">
                         Hijau Pucuk - Lengan Panjang Tanpa RIB
                       </span>
                     </div>
                     <div className="bg-blue-light max-w-[350px] container-product-button text-sm">
-                      <div className="text-left text-3xl text-java-blue pl-4 pt-4 pb-2">
+                      <div className="text-left text-xl text-java-blue pl-2 pt-2 pb-2">
                         Rp30.000
                       </div>
-                      <div className="text-left pl-4 italic text-gray-400 text-sm pb-2">
+                      <div className="text-left pl-2 italic text-gray-400 text-sm pb-1">
                         Jaminan produk berkualitas 100% Ori
                       </div>
                     </div>

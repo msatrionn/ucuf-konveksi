@@ -38,6 +38,13 @@ body {
     max-width: 70%;
   }
 }
+@media (max-width: 914px) {
+  .wrapper-footers {
+    display: flex !important;
+    font-size: 14px;
+    padding-right: 30px;
+  }
+}
 @media (max-width: 1040px) {
   .wrap-chart {
     max-width: 90% !important;
