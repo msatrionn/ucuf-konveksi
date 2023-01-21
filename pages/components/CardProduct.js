@@ -43,7 +43,7 @@ const CardProduct = ({
   //     item.jenis.toLowerCase().includes(Type)
   // );
   const DataDetail = [];
-  details.map((item) => {
+  details?.map((item) => {
     if (
       item.age === Ages &&
       item.jenis === Type &&
@@ -296,7 +296,7 @@ const CardProduct = ({
                           </tr>
                         </thead>
                         <tbody>
-                          {DataDetail.map((item, key) => (
+                          {DataDetail?.map((item, key) => (
                             <tr
                               className="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                               key={key}
