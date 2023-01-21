@@ -40,12 +40,12 @@ const navbar = () => {
               </div>
             </div>
             <div className="hidden -mx-4 md:flex md:items-center">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-blue-600"
               >
                 Home
-              </a>
+              </Link>
               <a
                 href="#"
                 className="block mx-4 mt-2 md:mt-0 text-sm text-gray-700 capitalize hover:text-blue-600"

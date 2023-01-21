@@ -32,16 +32,26 @@ const CardProduct = ({
     setQty("");
     setSize("");
   };
-  const DataDetail = details.filter(
-    (item) =>
-      item.age.toLowerCase().includes(Ages) &&
-      item.material.toLowerCase().includes(Material) &&
-      item.jenis.toLowerCase().includes(Type)
-  );
-
-  useEffect(() => {
-    setData(DataDetail);
-  }, [Ages, Material, Type]);
+  // console.log(details, Type);
+  // details.map(item => {
+  //   item.age
+  // })
+  // const DataDetail = details.filter(
+  //   (item) =>
+  //     item.age.toLowerCase().includes(Ages) &&
+  //     item.material.toLowerCase().includes(Material) &&
+  //     item.jenis.toLowerCase().includes(Type)
+  // );
+  const DataDetail = [];
+  details.map((item) => {
+    if (
+      item.age === Ages &&
+      item.jenis === Type &&
+      item.material === Material
+    ) {
+      DataDetail.push(item);
+    }
+  });
 
   const redirectWhatsApp = () => {
     if (qty < 1) {
@@ -135,7 +145,7 @@ const CardProduct = ({
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
                           <div
-                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Ages == "adult"
                                 ? "bg-blue-light border-java-blue innerbutton"
                                 : "border-gray-200"
@@ -150,7 +160,7 @@ const CardProduct = ({
                             )}
                           </div>
                           <div
-                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Ages == "child"
                                 ? "bg-blue-light border-java-blue innerbutton"
                                 : "border-gray-200"
@@ -172,7 +182,7 @@ const CardProduct = ({
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                           <div
-                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Material == "24s"
                                 ? "bg-blue-light border-java-blue innerbutton"
                                 : "border-gray-200"
@@ -187,7 +197,7 @@ const CardProduct = ({
                             )}
                           </div>
                           <div
-                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Material == "30s"
                                 ? "bg-blue-light border-java-blue innerbutton"
                                 : "border-gray-200"
@@ -209,7 +219,7 @@ const CardProduct = ({
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                           <div
-                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Type == "pendek"
                                 ? "bg-blue-light border-java-blue innerbutton"
                                 : "border-gray-200"
@@ -223,31 +233,33 @@ const CardProduct = ({
                               ""
                             )}
                           </div>
+
                           <div
-                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Type == "panjang"
                                 ? "bg-blue-light border-java-blue innerbutton"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setType("panjang")}
                           >
-                            <span>Panjang + RIB</span>
+                            <span>Panjang</span>
                             {Type == "panjang" ? (
                               <Image src={CheckImg} className="ml-2" alt="" />
                             ) : (
                               ""
                             )}
                           </div>
+
                           <div
-                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 ${
-                              Type == "panjang_no_rib"
+                            className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
+                              Type == "no_rib"
                                 ? "bg-blue-light border-java-blue innerbutton"
                                 : "border-gray-200"
                             }`}
-                            onClick={() => setType("panjang_no_rib")}
+                            onClick={() => setType("no_rib")}
                           >
                             <span>Panjang no RIB</span>
-                            {Type == "panjang_no_rib" ? (
+                            {Type == "no_rib" ? (
                               <Image src={CheckImg} className="ml-2" alt="" />
                             ) : (
                               ""
@@ -284,7 +296,7 @@ const CardProduct = ({
                           </tr>
                         </thead>
                         <tbody>
-                          {Data.map((item, key) => (
+                          {DataDetail.map((item, key) => (
                             <tr
                               className="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                               key={key}
@@ -336,25 +348,6 @@ const CardProduct = ({
                   </button>
                 </div>
               </div>
-              {/* <div className="flex  flex-wrap bg-red-200 h-[100%]">
-                <div className="w-[50%] h-[50%] flex justify-center">
-                  <Image
-                    className="h-[450px] w-[450px] object-cover p-6"
-                    src={color}
-                    key={keys}
-                    alt=""
-                    priority
-                  />
-                </div>
-                <div className="w-[50%] mt-8 text-left flex">
-                  <div className="w-[50px] h-[60px]">
-                    <span className="text-xl bg-blue-light p-2">#129</span>
-                  </div>
-                  <span className="text-xl ml-6">
-                    Hijau Pucuk - Lengan Panjang Tanpa RIB
-                  </span>
-                </div>
-              </div> */}
             </div>
           </div>
         </>
