@@ -64,7 +64,7 @@ const CardProduct = ({
     }
   };
   return (
-    <div>
+    <div className="">
       <section className="mx-auto w-fit p-2 drop-shadow-lg">
         <div className="w-64 h-fit group">
           <Fragment key={keys}>
@@ -112,27 +112,33 @@ const CardProduct = ({
       {showModal ? (
         <>
           <div className="justify-center items-center flex fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="bg-white w-[50%] h-[95%] overflow-y-auto rounded-xl">
+            <div className="bg-white w-[70%] h-[95%] overflow-y-auto rounded-xl shadow-xl modal-container">
               <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-full">
+                <span
+                  className="flex mr-5 mt-2 justify-end cursor-pointer text-lg"
+                  onClick={() => setShowModal(false)}
+                >
+                  x
+                </span>
                 <div className="md:flex container-product">
-                  <div className="md:shrink-0">
+                  <div className="md:shrink-0 pl-10">
                     <Image
-                      className="h-[355px] w-[full] object-contain md:w-[355px] p-7"
+                      className="h-[100%] w-[full] object-cover md:w-[90%] container-image-product"
                       src={color}
                       alt="Modern building architecture"
                     />
                   </div>
-                  <div className="">
-                    <div className="w-full mt-8 text-left flex justify-center">
+                  <div className="w-[40%] container-choose-product">
+                    <div className="w-full text-left flex justify-start mt-2">
                       <div className="w-[50px] h-[60px]">
                         <span className="text-md bg-blue-light p-2">#129</span>
                       </div>
-                      <span className="text-md ml-6">
+                      <span className="text-md">
                         Hijau Pucuk - Lengan Panjang Tanpa RIB
                       </span>
                     </div>
-                    <div className="bg-blue-light max-w-[350px] container-product-button text-sm">
-                      <div className="text-left text-xl text-java-blue pl-2 pt-2 pb-2">
+                    <div className="bg-blue-light max-w-[100%] text-sm">
+                      <div className="text-left text-xl text-java-blue pl-2 pt-2">
                         Rp30.000
                       </div>
                       <div className="text-left pl-2 italic text-gray-400 text-sm pb-1">
@@ -140,15 +146,15 @@ const CardProduct = ({
                       </div>
                     </div>
                     <div className="flex flex-col">
-                      <div className="container max-w-[350px] container-product-button text-sm">
-                        <div className="flex justify-start text-gray-400 mt-2 mb-2">
+                      <div className="container max-w-[100%] container-product-button text-sm">
+                        <div className="flex justify-start text-gray-400 mt-1 mb-1">
                           Jenis Usia
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Ages == "adult"
-                                ? "bg-blue-light border-java-blue innerbutton"
+                                ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setAges("adult")}
@@ -163,7 +169,7 @@ const CardProduct = ({
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Ages == "child"
-                                ? "bg-blue-light border-java-blue innerbutton"
+                                ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setAges("child")}
@@ -177,15 +183,15 @@ const CardProduct = ({
                           </div>
                         </div>
                       </div>
-                      <div className="container max-w-[350px] container-product-button text-sm">
-                        <div className="flex justify-start text-gray-400 mt-2 mb-2">
+                      <div className="container max-w-[100%] container-product-button text-sm">
+                        <div className="flex justify-start text-gray-400 mt-1 mb-1">
                           Bahan
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Material == "24s"
-                                ? "bg-blue-light border-java-blue innerbutton"
+                                ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setMaterial("24s")}
@@ -200,7 +206,7 @@ const CardProduct = ({
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Material == "30s"
-                                ? "bg-blue-light border-java-blue innerbutton"
+                                ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setMaterial("30s")}
@@ -214,15 +220,15 @@ const CardProduct = ({
                           </div>
                         </div>
                       </div>
-                      <div className="container max-w-[350px] container-product-button text-sm">
-                        <div className="flex justify-start text-gray-400 mt-2 mb-2">
+                      <div className="container max-w-[100%] container-product-button text-sm">
+                        <div className="flex justify-start text-gray-400 mt-1 mb-1">
                           Jenis
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Type == "pendek"
-                                ? "bg-blue-light border-java-blue innerbutton"
+                                ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setType("pendek")}
@@ -238,7 +244,7 @@ const CardProduct = ({
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Type == "panjang"
-                                ? "bg-blue-light border-java-blue innerbutton"
+                                ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setType("panjang")}
@@ -254,7 +260,7 @@ const CardProduct = ({
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
                               Type == "no_rib"
-                                ? "bg-blue-light border-java-blue innerbutton"
+                                ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
                             onClick={() => setType("no_rib")}
@@ -272,7 +278,7 @@ const CardProduct = ({
                   </div>
                 </div>
               </div>
-              <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-[680px]">
+              <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-[920px]">
                 <div className="md:flex">
                   <div className="table-class mx-auto w-full pl-10 pr-10">
                     <div className="relative overflow-x-auto  sm:-mx-6 lg:-mx-8  sm:rounded-lg">
@@ -330,11 +336,11 @@ const CardProduct = ({
                   </div>
                 </div>
               </div>
-              <div className="flex justify-between bg-gray-100 mt-[24px] flex-wrap wrapper-footers">
-                <div className="flex items-center justify-center mb-5 mt-5 break-words ml-10 text-gray-500">
+              <div className="flex justify-between bg-gray-100 flex-wrap wrapper-footers">
+                <div className="flex mt-4 break-words ml-10 text-sm text-gray-500">
                   Perubahan data stok terakhir: 09 Januari 2023
                 </div>
-                <div className="mr-7 flex justify-center items-center  mb-5 mt-5">
+                <div className="mr-7 flex justify-center text-sm mt-1 mb-1 items-center p-1 wrapper-footers-button">
                   <button
                     onClick={() => setShowModal(false)}
                     className="text-java-blue p-2 pl-3 pr-3 rounded-md"
@@ -343,7 +349,7 @@ const CardProduct = ({
                   </button>
                   <button
                     onClick={() => redirectWhatsApp()}
-                    className="bg-java-blue text-white p-2 pl-3 pr-3 rounded-md ml-4"
+                    className="bg-java-blue text-white p-1 pl-2 pr-2 rounded-md ml-4"
                   >
                     Beli Sekarang
                   </button>
