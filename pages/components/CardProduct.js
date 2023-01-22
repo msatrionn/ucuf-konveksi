@@ -25,11 +25,12 @@ const CardProduct = ({
   const handleAdult = (item, e) => {
     const datas = [];
     if (e.target.checked) {
-      datas.push(item);
-      setCheck(item);
+      datas.push(item.size);
+      setCheck(item.size);
     }
+    console.log(item);
     setAge("adult");
-    setQty("");
+    setQty(1);
     setSize("");
   };
   // console.log(details, Type);
@@ -323,7 +324,7 @@ const CardProduct = ({
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
                                     disabled={item.qty == 0 ?? "true"}
-                                    onChange={(e) => handleAdult(item.size, e)}
+                                    onChange={(e) => handleAdult(item, e)}
                                     checked={item.size == Check ? true : false}
                                   />
                                 </label>
