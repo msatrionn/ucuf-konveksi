@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div>
       <hr />
-      <div className="p-4 bg-java-blue shadow md:px-6 md:py-5 dark:bg-gray-900">
+      <div className="p-4 bg-java-blue shadow md:px-6 md:py-5 dark:bg-gray-900 mt-4">
         <div className="sm:flex items-center justify-center"></div>
         <div className="flex justify-center mt-5">
           <div className="">

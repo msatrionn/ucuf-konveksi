@@ -2,79 +2,94 @@ import Image from "next/image";
 import React, { Fragment, useEffect, useState } from "react";
 import CheckImg from "../../public/image/Vector.svg";
 
-const CardProduct = ({
-  id,
-  keys,
-  colorName,
-  color,
-  price,
-  promoPrice,
-  item,
-  details,
-  type,
-}) => {
+const CardProduct = ({ id, photo, description, price, details }) => {
   const [showModal, setShowModal] = useState(false);
-  const [age, setAge] = useState("adult");
-  const [size, setSize] = useState("L");
+  const [age, setAge] = useState("dewasa");
+  const [size, setSize] = useState("l");
   const [qty, setQty] = useState(0);
   const [Check, setCheck] = useState([]);
+  const [Item, setItem] = useState([]);
   const [Data, setData] = useState([]);
-  const [Ages, setAges] = useState("adult");
+  const [Ages, setAges] = useState("dewasa");
+  const [Price, setPrice] = useState(price);
   const [Material, setMaterial] = useState("30s");
   const [Type, setType] = useState("pendek");
   const handleAdult = (item, e) => {
     const datas = [];
     if (e.target.checked) {
+      setPrice(item.price);
       datas.push(item.size);
       setCheck(item.size);
     }
-    console.log(item);
-    setAge("adult");
+    setAge("dewasa");
     setQty(1);
     setSize("");
   };
-  // console.log(details, Type);
-  // details.map(item => {
-  //   item.age
-  // })
-  // const DataDetail = details.filter(
-  //   (item) =>
-  //     item.age.toLowerCase().includes(Ages) &&
-  //     item.material.toLowerCase().includes(Material) &&
-  //     item.jenis.toLowerCase().includes(Type)
-  // );
   const DataDetail = [];
-  details?.map((item) => {
-    if (
-      item.age === Ages &&
-      item.jenis === Type &&
-      item.material === Material
-    ) {
+  details.map((item) => {
+    if (item.age === Ages && item.type === Type && item.material === Material) {
       DataDetail.push(item);
     }
   });
+  const dataXS = [];
+  const dataS = [];
+  const dataM = [];
+  const dataL = [];
+  const dataXL = [];
+  const dataXXL = [];
+  const dataXXXL = [];
+  const dataXXXXL = [];
+  DataDetail.map((item) => {
+    if (item.size == "xs") {
+      dataXS.push(item);
+    } else if (item.size == "s") {
+      dataS.push(item);
+    } else if (item.size == "m") {
+      dataM.push(item);
+    } else if (item.size == "l") {
+      dataL.push(item);
+    } else if (item.size == "xl") {
+      dataXL.push(item);
+    } else if (item.size == "xxl") {
+      dataXXL.push(item);
+    } else if (item.size == "xxxl") {
+      dataXXXL.push(item);
+    } else if (item.size == "xxxxl") {
+      dataXXXXL.push(item);
+    }
+  });
 
-  const redirectWhatsApp = () => {
-    if (qty < 1) {
+  const redirectWhatsApp = (Item) => {
+    if (Item[0]?.stock < 1) {
       alert("Silahkan pilih ukuran terlebih dahulu");
     } else {
       window.open(
-        `https://wa.me/6282322109841?text=Hi,%20saya%20ingin%20pesan%20kaos%20${item.title}%20versi%20${age}%20dengan%20ukuran%20${size}%20,%20apakah%20tersedia?`,
+        `https://wa.me/6282322109841?text=Hi,%20saya%20ingin%20pesan%20kaos%20${description}%20versi%20${age}%20dengan%20ukuran%20${size}%20,%20apakah%20tersedia?`,
         "_blank"
       );
     }
   };
+  useEffect(() => {
+    Item.map((data) => {
+      setSize(data.size);
+      setPrice(data.price);
+      setQty(data.stock);
+    });
+  }, [Item]);
+
   return (
     <div className="">
       <section className="mx-auto w-fit p-2 drop-shadow-lg">
         <div className="w-64 h-fit group">
-          <Fragment key={keys}>
+          <Fragment key={id}>
             <div className="relative overflow-hidden bg-white ">
               <Image
                 className="h-96 w-full object-cover"
-                src={color}
-                key={keys}
+                src={photo}
+                key={id}
                 alt=""
+                width={600}
+                height={600}
                 priority
               />
               <div className="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -87,21 +102,21 @@ const CardProduct = ({
                 </button>
               </div>
               <div className="text-left pl-4">
-                <h2 className="mt-3 text-xl capitalize mb-2" key={keys}>
-                  {colorName}
+                <h2 className="mt-3 text-xl capitalize mb-2" key={id}>
+                  {/* {colorName} */}
                 </h2>
                 <span className="bg-blue-light text-java-blue p-1 text-xs">
                   <span className="text-xs">RP</span>
-                  {price}
+                  {Price}
                 </span>
                 <div className="pb-2">
                   {/* <del className="text-red-700 text-md">
                     <span className="text-xs">RP</span>
-                    <span className="mt-2"> {price}</span>
+                    <span className="mt-2"> {Price}</span>
                   </del> */}
                   {/* <p className="text-md mt-2 inline-block  text-java-blue">
                     <span className="text-xs">RP</span>
-                    {price}
+                    {Price}
                   </p> */}
                 </div>
               </div>
@@ -124,23 +139,30 @@ const CardProduct = ({
                 <div className="md:flex container-product">
                   <div className="md:shrink-0 pl-10">
                     <Image
+                      width={540}
+                      height={540}
                       className="h-[100%] w-[full] object-cover md:w-[90%] container-image-product"
-                      src={color}
+                      src={photo}
                       alt="Modern building architecture"
                     />
                   </div>
                   <div className="w-[40%] container-choose-product">
                     <div className="w-full text-left flex justify-start mt-2">
                       <div className="w-[50px] h-[60px]">
-                        <span className="text-md bg-blue-light p-2">#129</span>
+                        <span className="text-md bg-blue-light p-2">#{id}</span>
                       </div>
                       <span className="text-md">
-                        Hijau Pucuk - Lengan Panjang Tanpa RIB
+                        {description} -{" "}
+                        {Type == "no_rib"
+                          ? "Panjang no RIB"
+                          : Type == "panjang"
+                          ? "Panjang + RIB"
+                          : "Pendek"}
                       </span>
                     </div>
                     <div className="bg-blue-light max-w-[100%] text-sm">
                       <div className="text-left text-xl text-java-blue pl-2 pt-2">
-                        Rp30.000
+                        Rp{Price}
                       </div>
                       <div className="text-left pl-2 italic text-gray-400 text-sm pb-1">
                         Jaminan produk berkualitas 100% Ori
@@ -154,14 +176,14 @@ const CardProduct = ({
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
-                              Ages == "adult"
+                              Ages == "dewasa"
                                 ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
-                            onClick={() => setAges("adult")}
+                            onClick={() => setAges("dewasa")}
                           >
                             <span>Dewasa</span>
-                            {Ages == "adult" ? (
+                            {Ages == "dewasa" ? (
                               <Image src={CheckImg} className="ml-2" alt="" />
                             ) : (
                               ""
@@ -169,14 +191,14 @@ const CardProduct = ({
                           </div>
                           <div
                             className={`flex border-2 rounded-md text-left text-java-blue pt-1 pb-1 pr-4 pl-4 cursor-pointer ${
-                              Ages == "child"
+                              Ages == "anak"
                                 ? "bg-blue-light border-java-blue"
                                 : "border-gray-200"
                             }`}
-                            onClick={() => setAges("child")}
+                            onClick={() => setAges("anak")}
                           >
                             <span>Anak</span>
-                            {Ages == "child" ? (
+                            {Ages == "anak" ? (
                               <Image src={CheckImg} className="ml-2" alt="" />
                             ) : (
                               ""
@@ -281,30 +303,409 @@ const CardProduct = ({
               </div>
               <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-[920px]">
                 <div className="md:flex">
-                  <div className="table-class mx-auto w-full pl-10 pr-10">
-                    <div className="relative overflow-x-auto  sm:-mx-6 lg:-mx-8  sm:rounded-lg">
-                      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead className="text-xs text-gray-700 border-b border-black dark:bg-gray-700 dark:text-gray-400">
-                          <tr>
-                            <td
-                              scope="col"
-                              className="px-8 py-1 text-xs text-gray-400"
-                            >
-                              Ukuran
-                            </td>
-                            <td
-                              scope="col"
-                              className="px-8 py-1 text-xs text-gray-400"
-                            >
-                              Harga
-                            </td>
-                            <td scope="col" className="text-xs text-gray-400">
-                              Stok
-                            </td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {DataDetail?.map((item, key) => (
+                  <div className="table-class mx-auto w-full pl-10 pr-10 flex justify-center">
+                    <div className="flex justify-between w-full flex-wrap">
+                      <div className="relative w-[400px] pb-4 overflow-x-auto  sm:-mx-6 lg:-mx-8  sm:rounded-lg">
+                        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                          <thead className="text-xs text-gray-700 border-b border-black dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                              <td
+                                scope="col"
+                                className="px-8 py-1 text-xs text-gray-400"
+                              >
+                                Ukuran
+                              </td>
+                              <td
+                                scope="col"
+                                className="px-8 py-1 text-xs text-gray-400"
+                              >
+                                Harga
+                              </td>
+                              <td scope="col" className="text-xs text-gray-400">
+                                Stok
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">XS</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataXS.length > 0
+                                  ? dataXS.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataXS.length > 0
+                                      ? dataXS.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    // disabled={item.qty == 0 ?? "true"}
+                                    // onChange={(e) => handleAdult(item, e)}
+                                    checked={size == "xs" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "xs",
+                                          price:
+                                            dataXS.length > 0
+                                              ? dataXS[0].price
+                                              : 0,
+                                          stock:
+                                            dataXS.length > 0
+                                              ? dataXS[0].qty
+                                              : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">S</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataS.length > 0
+                                  ? dataS.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataS.length > 0
+                                      ? dataS.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    // disabled={item.qty == 0 ?? "true"}
+                                    // onChange={(e) => handleAdult(item, e)}
+                                    checked={size == "s" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "s",
+                                          price:
+                                            dataS.length > 0
+                                              ? dataS[0].price
+                                              : 0,
+                                          stock:
+                                            dataS.length > 0 ? dataS[0].qty : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">M</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataM.length > 0
+                                  ? dataM.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataM.length > 0
+                                      ? dataM.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    // disabled={item.qty == 0 ?? "true"}
+                                    // onChange={(e) => handleAdult(item, e)}
+                                    checked={size == "m" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "m",
+                                          price:
+                                            dataM.length > 0
+                                              ? dataM[0].price
+                                              : 0,
+                                          stock:
+                                            dataM.length > 0 ? dataM[0].qty : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">L</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataL.length > 0
+                                  ? dataL.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataL.length > 0
+                                      ? dataL.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    // disabled={item.qty == 0 ?? "true"}
+                                    // onChange={(e) => handleAdult(item, e)}
+                                    checked={size == "l" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "l",
+                                          price:
+                                            dataL.length > 0
+                                              ? dataL[0].price
+                                              : 0,
+                                          stock:
+                                            dataL.length > 0 ? dataL[0].qty : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="relative w-[400px] overflow-x-auto  sm:-mx-6 lg:-mx-8  sm:rounded-lg">
+                        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                          <thead className="text-xs text-gray-700 border-b border-black dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                              <td
+                                scope="col"
+                                className="px-8 py-1 text-xs text-gray-400"
+                              >
+                                Ukuran
+                              </td>
+                              <td
+                                scope="col"
+                                className="px-8 py-1 text-xs text-gray-400"
+                              >
+                                Harga
+                              </td>
+                              <td scope="col" className="text-xs text-gray-400">
+                                Stok
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">XL</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataXL.length > 0
+                                  ? dataXL.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataXL.length > 0
+                                      ? dataXL.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    // disabled={item.qty == 0 ?? "true"}
+                                    // onChange={(e) => handleAdult(item, e)}
+                                    checked={size == "xl" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "xl",
+                                          price:
+                                            dataXL.length > 0
+                                              ? dataXL[0].price
+                                              : 0,
+                                          stock:
+                                            dataXL.length > 0
+                                              ? dataXL[0].qty
+                                              : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">XXL</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataXXL.length > 0
+                                  ? dataXXL.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataXXL.length > 0
+                                      ? dataXXL.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    // disabled={item.qty == 0 ?? "true"}
+                                    // onChange={(e) => handleAdult(item, e)}
+                                    checked={size == "xxl" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "xxl",
+                                          price:
+                                            dataXXL.length > 0
+                                              ? dataXXL[0].price
+                                              : 0,
+                                          stock:
+                                            dataXXL.length > 0
+                                              ? dataXXL[0].qty
+                                              : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">XXXL</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataXXXL.length > 0
+                                  ? dataXXXL.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataXXXL.length > 0
+                                      ? dataXXXL.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    // disabled={item.qty == 0 ?? "true"}
+                                    // onChange={(e) => handleAdult(item, e)}
+                                    checked={size == "xxxl" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "xxxl",
+                                          price:
+                                            dataXXXL.length > 0
+                                              ? dataXXXL[0].price
+                                              : 0,
+                                          stock:
+                                            dataXXXL.length > 0
+                                              ? dataXXXL[0].qty
+                                              : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                            <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                              <td className="px-8 py-1 text-xs">XXXXL</td>
+                              <td className="px-8 py-2 text-xs">
+                                {dataXXXXL.length > 0
+                                  ? dataXXXXL.map((item, key) => {
+                                      return <div key={key}>{item.price}</div>;
+                                    })
+                                  : "-"}
+                              </td>
+                              <td className="text-xs">
+                                <label className="flex items-center">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
+                                    {dataXXXXL.length > 0
+                                      ? dataXXXXL.map((item, key) => {
+                                          return (
+                                            <div key={key}>{item.qty}</div>
+                                          );
+                                        })
+                                      : "-"}
+                                  </span>
+                                  <input
+                                    type="checkbox"
+                                    className="accent-java-blue w-4 h-4"
+                                    checked={size == "xxxxl" ? true : false}
+                                    onChange={() =>
+                                      setItem([
+                                        {
+                                          size: "xxxxl",
+                                          price:
+                                            dataXXXXL.length > 0
+                                              ? dataXXXXL[0].price
+                                              : 0,
+                                          stock:
+                                            dataXXXXL.length > 0
+                                              ? dataXXXXL[0].qty
+                                              : 0,
+                                        },
+                                      ])
+                                    }
+                                  />
+                                </label>
+                              </td>
+                            </tr>
+                            {/* {DataDetail?.map((item, key) => (
                             <tr
                               className="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                               key={key}
@@ -317,7 +718,7 @@ const CardProduct = ({
                               </td>
                               <td className="text-xs">
                                 <label className="flex items-center">
-                                  <span className="mr-4 text-java-blue">
+                                  <span className="mr-4 text-java-blue  w-[20px]">
                                     {item.qty}
                                   </span>
                                   <input
@@ -330,9 +731,10 @@ const CardProduct = ({
                                 </label>
                               </td>
                             </tr>
-                          ))}
-                        </tbody>
-                      </table>
+                          ))} */}
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -349,7 +751,7 @@ const CardProduct = ({
                     Kembali
                   </button>
                   <button
-                    onClick={() => redirectWhatsApp()}
+                    onClick={() => redirectWhatsApp(Item)}
                     className="bg-java-blue text-white p-1 pl-2 pr-2 rounded-md ml-4"
                   >
                     Beli Sekarang
