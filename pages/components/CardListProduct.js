@@ -1,36 +1,33 @@
 import React, { useEffect, useState } from "react";
 import CardProduct from "./CardProduct";
-import Brown from "../../public/image/brown.jpg";
-import Black from "../../public/image/black.jpg";
-import White from "../../public/image/white.jpg";
-import Maroon from "../../public/image/maroon.jpg";
-import Blue from "../../public/image/blue.jpg";
 import axios from "axios";
 
 const CardListProduct = ({ search }) => {
   const [datas, setDatas] = useState([]);
   const [loading, setLoading] = useState(false);
-  const getData = () => {
-    axios
-      .get(
-        "https://api.ucuf-konveksi.ucufkonveksi.com/api/admin/" + "product-all",
-        {
-          params: { search: search },
-        }
-      )
-      .then((result) => {
-        setLoading(true);
-        setTimeout(() => {
-          setDatas(result.data.data);
-          setLoading(false);
-        }, datas);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
   useEffect(() => {
+    const getData = async () => {
+      await axios
+        .get(
+          "https://api.ucuf-konveksi.ucufkonveksi.com/api/admin/" +
+            "product-all",
+          {
+            params: { search: search },
+          }
+        )
+        .then((result) => {
+          setLoading(true);
+          setTimeout(() => {
+            setDatas(result.data.data);
+            setLoading(false);
+          }, datas);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
     getData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
 
   return (

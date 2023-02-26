@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["api.ucuf-konveksi.ucufkonveksi.com"],
+    domains: ["api.ucuf-konveksi.ucufkonveksi.com", "localhost"],
   },
 };
 

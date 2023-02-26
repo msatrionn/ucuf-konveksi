@@ -5,11 +5,10 @@ import CheckImg from "../../public/image/Vector.svg";
 const CardProduct = ({ id, photo, description, price, details }) => {
   const [showModal, setShowModal] = useState(false);
   const [age, setAge] = useState("dewasa");
-  const [size, setSize] = useState("l");
+  const [size, setSize] = useState("");
   const [qty, setQty] = useState(0);
   const [Check, setCheck] = useState([]);
   const [Item, setItem] = useState([]);
-  const [Data, setData] = useState([]);
   const [Ages, setAges] = useState("dewasa");
   const [Price, setPrice] = useState(price);
   const [Material, setMaterial] = useState("30s");
@@ -25,9 +24,18 @@ const CardProduct = ({ id, photo, description, price, details }) => {
     setQty(1);
     setSize("");
   };
+  details?.map((item, key) => {
+    if (item.qty < 1) {
+      return (details[key].qty = 0);
+    }
+  });
   const DataDetail = [];
-  details.map((item) => {
+  var cekdata = false;
+  details?.map((item) => {
     if (item.age === Ages && item.type === Type && item.material === Material) {
+      if (item) {
+        cekdata = true;
+      }
       DataDetail.push(item);
     }
   });
@@ -39,7 +47,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
   const dataXXL = [];
   const dataXXXL = [];
   const dataXXXXL = [];
-  DataDetail.map((item) => {
+  DataDetail?.map((item) => {
     if (item.size == "xs") {
       dataXS.push(item);
     } else if (item.size == "s") {
@@ -70,12 +78,15 @@ const CardProduct = ({ id, photo, description, price, details }) => {
     }
   };
   useEffect(() => {
-    Item.map((data) => {
+    Item?.map((data) => {
       setSize(data.size);
       setPrice(data.price);
       setQty(data.stock);
     });
-  }, [Item]);
+    if (cekdata == false) {
+      setSize("");
+    }
+  }, [Item, cekdata]);
 
   return (
     <div className="">
@@ -103,7 +114,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
               </div>
               <div className="text-left pl-4">
                 <h2 className="mt-3 text-xl capitalize mb-2" key={id}>
-                  {/* {colorName} */}
+                  {description ?? ""}
                 </h2>
                 <span className="bg-blue-light text-java-blue p-1 text-xs">
                   <span className="text-xs">RP</span>
@@ -137,11 +148,11 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                   x
                 </span>
                 <div className="md:flex container-product">
-                  <div className="md:shrink-0 pl-10">
+                  <div className="md:shrink-0 pl-10 w-[550px] max-h-[500px]">
                     <Image
-                      width={540}
-                      height={540}
-                      className="h-[100%] w-[full] object-cover md:w-[90%] container-image-product"
+                      width={600}
+                      height={600}
+                      className="h-[100%] w-[full] object-contain md:w-[90%] container-image-product"
                       src={photo}
                       alt="Modern building architecture"
                     />
@@ -331,7 +342,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">XS</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataXS.length > 0
-                                  ? dataXS.map((item, key) => {
+                                  ? dataXS?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -340,7 +351,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataXS.length > 0
-                                      ? dataXS.map((item, key) => {
+                                      ? dataXS?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -350,7 +361,11 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    // disabled={item.qty == 0 ?? "true"}
+                                    disabled={
+                                      dataXS.length == 0
+                                        ? "true"
+                                        : dataXS[0].qty == 0 ?? "true"
+                                    }
                                     // onChange={(e) => handleAdult(item, e)}
                                     checked={size == "xs" ? true : false}
                                     onChange={() =>
@@ -376,7 +391,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">S</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataS.length > 0
-                                  ? dataS.map((item, key) => {
+                                  ? dataS?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -385,7 +400,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataS.length > 0
-                                      ? dataS.map((item, key) => {
+                                      ? dataS?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -396,7 +411,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    // disabled={item.qty == 0 ?? "true"}
+                                    disabled={dataS.length == 0 ?? "true"}
                                     // onChange={(e) => handleAdult(item, e)}
                                     checked={size == "s" ? true : false}
                                     onChange={() =>
@@ -420,7 +435,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">M</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataM.length > 0
-                                  ? dataM.map((item, key) => {
+                                  ? dataM?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -429,7 +444,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataM.length > 0
-                                      ? dataM.map((item, key) => {
+                                      ? dataM?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -439,7 +454,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    // disabled={item.qty == 0 ?? "true"}
+                                    disabled={dataM.length == 0 ?? "true"}
                                     // onChange={(e) => handleAdult(item, e)}
                                     checked={size == "m" ? true : false}
                                     onChange={() =>
@@ -463,7 +478,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">L</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataL.length > 0
-                                  ? dataL.map((item, key) => {
+                                  ? dataL?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -472,7 +487,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataL.length > 0
-                                      ? dataL.map((item, key) => {
+                                      ? dataL?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -482,9 +497,13 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    // disabled={item.qty == 0 ?? "true"}
+                                    disabled={dataL.length == 0 ?? "true"}
                                     // onChange={(e) => handleAdult(item, e)}
-                                    checked={size == "l" ? true : false}
+                                    checked={
+                                      size == "l" && dataL.length != 0
+                                        ? true
+                                        : false
+                                    }
                                     onChange={() =>
                                       setItem([
                                         {
@@ -531,7 +550,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">XL</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataXL.length > 0
-                                  ? dataXL.map((item, key) => {
+                                  ? dataXL?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -540,7 +559,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataXL.length > 0
-                                      ? dataXL.map((item, key) => {
+                                      ? dataXL?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -550,7 +569,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    // disabled={item.qty == 0 ?? "true"}
+                                    disabled={dataXL.length == 0 ?? "true"}
                                     // onChange={(e) => handleAdult(item, e)}
                                     checked={size == "xl" ? true : false}
                                     onChange={() =>
@@ -576,7 +595,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">XXL</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataXXL.length > 0
-                                  ? dataXXL.map((item, key) => {
+                                  ? dataXXL?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -585,7 +604,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataXXL.length > 0
-                                      ? dataXXL.map((item, key) => {
+                                      ? dataXXL?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -595,7 +614,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    // disabled={item.qty == 0 ?? "true"}
+                                    disabled={dataXXL.length == 0 ?? "true"}
                                     // onChange={(e) => handleAdult(item, e)}
                                     checked={size == "xxl" ? true : false}
                                     onChange={() =>
@@ -621,7 +640,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">XXXL</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataXXXL.length > 0
-                                  ? dataXXXL.map((item, key) => {
+                                  ? dataXXXL?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -630,7 +649,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataXXXL.length > 0
-                                      ? dataXXXL.map((item, key) => {
+                                      ? dataXXXL?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -640,7 +659,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    // disabled={item.qty == 0 ?? "true"}
+                                    disabled={dataXXXL.length == 0 ?? "true"}
                                     // onChange={(e) => handleAdult(item, e)}
                                     checked={size == "xxxl" ? true : false}
                                     onChange={() =>
@@ -666,7 +685,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                               <td className="px-8 py-1 text-xs">XXXXL</td>
                               <td className="px-8 py-2 text-xs">
                                 {dataXXXXL.length > 0
-                                  ? dataXXXXL.map((item, key) => {
+                                  ? dataXXXXL?.map((item, key) => {
                                       return <div key={key}>{item.price}</div>;
                                     })
                                   : "-"}
@@ -675,7 +694,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 <label className="flex items-center">
                                   <span className="mr-4 text-java-blue  w-[20px]">
                                     {dataXXXXL.length > 0
-                                      ? dataXXXXL.map((item, key) => {
+                                      ? dataXXXXL?.map((item, key) => {
                                           return (
                                             <div key={key}>{item.qty}</div>
                                           );
@@ -686,6 +705,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
                                     checked={size == "xxxxl" ? true : false}
+                                    disabled={dataXXXXL.length == 0 ?? "true"}
                                     onChange={() =>
                                       setItem([
                                         {
@@ -705,7 +725,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                 </label>
                               </td>
                             </tr>
-                            {/* {DataDetail?.map((item, key) => (
+                            {/* {DataDetail??.map((item, key) => (
                             <tr
                               className="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                               key={key}
@@ -724,7 +744,7 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                                   <input
                                     type="checkbox"
                                     className="accent-java-blue w-4 h-4"
-                                    disabled={item.qty == 0 ?? "true"}
+                                    disabled={item.qty <1 ?? "true"}
                                     onChange={(e) => handleAdult(item, e)}
                                     checked={item.size == Check ? true : false}
                                   />
@@ -750,12 +770,18 @@ const CardProduct = ({ id, photo, description, price, details }) => {
                   >
                     Kembali
                   </button>
-                  <button
-                    onClick={() => redirectWhatsApp(Item)}
-                    className="bg-java-blue text-white p-1 pl-2 pr-2 rounded-md ml-4"
-                  >
-                    Beli Sekarang
-                  </button>
+                  {size == "" ? (
+                    <button className="bg-white text-gray p-1 pl-2 pr-2 rounded-md ml-4">
+                      Pilih Stok
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => redirectWhatsApp(Item)}
+                      className="bg-java-blue text-white p-1 pl-2 pr-2 rounded-md ml-4"
+                    >
+                      Beli Sekarang
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
